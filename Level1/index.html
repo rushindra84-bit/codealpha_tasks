@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cognifyz Internship - Level 1</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Task 1: Simple navigation menu -->
+  <nav class="navbar">
+    <div class="logo">Cognifyz</div>
+    <ul class="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Task 1: Simple webpage with heading, paragraph, image -->
+  <section id="home" class="section">
+    <h1>Welcome to My Web Development Internship</h1>
+    <p>
+      This page was built as part of Level 1 - Task 1 of the Cognifyz Technologies
+      Web Development Internship. It demonstrates a basic webpage layout using
+      HTML and CSS, including a heading, a paragraph, and an image.
+    </p>
+    <img src="https://picsum.photos/500/300" alt="Sample internship image" class="hero-img">
+  </section>
+
+  <!-- Task 1: Basic form -->
+  <section id="about" class="section form-section">
+    <h2>Basic Form</h2>
+    <form>
+      <label for="name">Enter your name:</label>
+      <input type="text" id="name" name="name" placeholder="Your name">
+      <button type="submit">Submit</button>
+    </form>
+  </section>
+
+  <!-- Task 2: Button that changes color on click -->
+  <section class="section">
+    <h2>Task 2 - JavaScript</h2>
+    <h3>Color Changing Button</h3>
+    <button id="colorBtn" onclick="changeColor()">Click Me!</button>
+  </section>
+
+  <!-- Task 2: Greeting alert based on current time -->
+  <section class="section">
+    <h3>Time-Based Greeting</h3>
+    <button onclick="greetUser()">Get Greeting</button>
+  </section>
+
+  <!-- Task 2: Basic calculator -->
+  <section id="contact" class="section calc-section">
+    <h3>Simple Calculator</h3>
+    <input type="number" id="num1" placeholder="First number">
+    <input type="number" id="num2" placeholder="Second number">
+    <button onclick="addNumbers()">Add</button>
+    <p id="result"></p>
+  </section>
+
+  <footer>
+    <p>&copy; 2026 Cognifyz Technologies Internship Project</p>
+  </footer>
+
+<script src="script.js"></script>
+</body>
+</html>
