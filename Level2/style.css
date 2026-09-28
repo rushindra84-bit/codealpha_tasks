@@ -1,0 +1,131 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+body {
+  margin: 0;
+  background-color: #f8f9fa;
+}
+
+/* ---------- Task 2: Pure CSS/HTML hamburger nav ---------- */
+.css-navbar {
+  background-color: #2c3e50;
+  padding: 15px 25px;
+}
+
+.nav-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.brand {
+  color: #f5b041;
+  font-weight: bold;
+  font-size: 1.4rem;
+}
+
+.menu-toggle {
+  display: none;
+}
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 5px;
+}
+
+.hamburger span {
+  width: 26px;
+  height: 3px;
+  background-color: white;
+  border-radius: 2px;
+}
+
+.css-nav-links {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+  margin: 15px 0 0 0;
+  padding: 0;
+}
+
+.css-nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.css-nav-links a:hover {
+  color: #f5b041;
+}
+
+/* Collapse into hamburger menu on small screens */
+@media (max-width: 768px) {
+  .hamburger {
+    display: flex;
+  }
+
+  .css-nav-links {
+    display: none;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 15px;
+  }
+
+  .menu-toggle:checked ~ .css-nav-links {
+    display: flex;
+  }
+}
+
+/* ---------- General sections ---------- */
+.hero {
+  background-color: #2c3e50;
+  color: white;
+}
+
+.grid-box {
+  background-color: #f5b041;
+  color: #222;
+  font-weight: bold;
+  text-align: center;
+  padding: 30px 10px;
+  border-radius: 8px;
+}
+
+/* ---------- Task 2: Responsive design with media queries ---------- */
+.responsive-demo {
+  background-color: #eaf2f8;
+}
+
+.demo-box {
+  margin: 20px auto 0;
+  padding: 30px;
+  background-color: #5dade2;
+  color: white;
+  font-weight: bold;
+  border-radius: 10px;
+  width: 80%;
+  font-size: 1.5rem;
+}
+
+/* Desktop default above; tablet breakpoint */
+@media (max-width: 992px) {
+  .demo-box {
+    background-color: #58d68d;
+    font-size: 1.2rem;
+    width: 90%;
+  }
+}
+
+/* Mobile breakpoint */
+@media (max-width: 576px) {
+  .demo-box {
+    background-color: #ec7063;
+    font-size: 1rem;
+    width: 100%;
+    padding: 20px;
+  }
+}

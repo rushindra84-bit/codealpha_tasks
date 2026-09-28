@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cognifyz Internship - Level 2</title>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Task 2: Mobile-friendly nav that collapses into a hamburger menu (pure HTML/CSS, no JS) -->
+  <nav class="css-navbar">
+    <div class="nav-header">
+      <span class="brand">Cognifyz</span>
+      <input type="checkbox" id="menu-toggle" class="menu-toggle">
+      <label for="menu-toggle" class="hamburger">
+        <span></span><span></span><span></span>
+      </label>
+    </div>
+    <ul class="css-nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#cards">Cards</a></li>
+      <li><a href="#grid">Grid</a></li>
+      <li><a href="#responsive">Responsive Demo</a></li>
+    </ul>
+  </nav>
+
+  <header id="home" class="hero">
+    <div class="container text-center py-5">
+      <h1>Level 2 - Frameworks &amp; Responsive Design</h1>
+      <p class="lead">Built with Bootstrap for components/grid, plus custom CSS media queries.</p>
+    </div>
+  </header>
+
+  <!-- Task 1: Responsive card component using Bootstrap -->
+  <section id="cards" class="container py-5">
+    <h2 class="mb-4">Responsive Card Component</h2>
+    <div class="row justify-content-center">
+      <div class="col-md-4 mb-4">
+        <div class="card h-100 shadow-sm">
+          <img src="https://picsum.photos/400/220?1" class="card-img-top" alt="Card image">
+          <div class="card-body">
+            <h5 class="card-title">Web Development</h5>
+            <p class="card-text">Learn HTML, CSS and JavaScript through hands-on internship tasks.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Task 1: Responsive grid layout using Bootstrap -->
+  <section id="grid" class="container py-5">
+    <h2 class="mb-4">Responsive Grid Layout</h2>
+    <div class="row g-3">
+      <div class="col-6 col-md-3"><div class="grid-box">Box 1</div></div>
+      <div class="col-6 col-md-3"><div class="grid-box">Box 2</div></div>
+      <div class="col-6 col-md-3"><div class="grid-box">Box 3</div></div>
+      <div class="col-6 col-md-3"><div class="grid-box">Box 4</div></div>
+    </div>
+  </section>
+
+  <!-- Task 2: Responsive design using custom CSS media queries -->
+  <section id="responsive" class="responsive-demo py-5">
+    <div class="container text-center">
+      <h2>Responsive Design Demo</h2>
+      <p>Resize your browser window — this box changes color, size, and layout at different breakpoints using CSS media queries.</p>
+      <div class="demo-box">Resize me!</div>
+    </div>
+  </section>
+
+  <footer class="text-center py-4">
+    <p>&copy; 2026 Cognifyz Technologies Internship Project</p>
+  </footer>
+
+</body>
+</html>
